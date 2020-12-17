@@ -1,0 +1,17 @@
+1.  Inicio
+2.  (notasEstudiantes(3)(4),i[1-n])
+3.  (nombreEstudiantes)(3), x(200)[{1-9},{a-z},{A-Z}, {/}, {BS}]
+4.  fila, i[0-n]
+5.  columna, i[0-n]
+6.  valor, i[0-n]
+7.  suma, d[0-n]
+8.  promedio, i[0-n]
+9.  nombreEstudiantes <-- {{Jerry Ponce}, {Gabriela Lewis}, {David Bell}}
+10.  notasEstudiantes <-- {{9, 10, 7, 8}, {10, 5, 7, 9}, {7, 9.4, 11, 9}}
+12.  Para(fila<--0, fila<=3,1) haga
+13.		Para(columna<--0,columna < 4,1)
+14.     Si fila == columna entonces
+15.     Escribir "Estudiante: "+ nombresEstudiantes +" tiene un promedio de "+[fila],[columna]
+16.     Fin Si
+17.   Fin_Para 
+18. Fin
