@@ -1,3 +1,14 @@
+//Problema1
+
+//Dado el siguiente arreglo bidimensional; representarlo en miniespecificación y recorrerlo para presentar los valores que están de color verde
+
+// 20	30	40	50
+// 2	3	4	5
+// 200	300	12	14
+// 10	11	12	14
+
+
+
 1.  Inicio
 2.  (valor(4)(4),i[1-n])
 3.  valor[0][0] <-- 20
