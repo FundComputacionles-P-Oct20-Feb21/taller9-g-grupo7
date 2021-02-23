@@ -20,26 +20,31 @@ Se requiere ingresar las ventas totales diaras de 2 vendedores; realizadas de lu
 
 ----------------------------------------------------------------------
 
-1.Inicio
-
-2. (vendedores(2),x(200)[{1-10},{A-Z},{a-z},{BS}])
-3. vendedores[0]<-- Jessica Cole
-4.  vendedores[1]<-- Robert Wallace
-5. (ventas(2)(5), d [0-n])
-6. suma, d [0-n]
-7. nombres(x)(200)[{1-10},{A-Z},{a-z},{BS}] <--- ""
-8. fila, i[0-n]
-9. columna, i[0-n]
-
-10. Para (fila <-- 0, fila < 2, 1) haga
-11.     Para(columna <-- 0, columna <= 5, 1) haga
-12.         Escribir "Ingrese el valor de ventas de " + vendedores[fila] 
-13.         Leer valor
-14.         ventas [fila][columna] <-- valor
-15.         suma = suma + ventas [fila][columna]
-16.     Fin_Para
-17. Fin_Para
-18. Escribir "Vendedor(a) " + vendedores[0] +
- "Vendedor(a) " + vendedores[1] + 
- "Ha realizado un total de" + suma "en ventas."
-19. Fin
+1_ Inicio
+2_ vendedores <-- {Jessica Cole, Robert Wallace}
+3_ ventas(2)(5), d[0, n]
+4_ columnas, i[0, n]
+5_ nombre, i[0, n]
+6_ suma, i[0, n]<--0
+7_ i, i[0, n]
+8_ Para (i<--0; i<2; i++) haga
+9_	Escribir "Ponga 1 para jessica o 2 para robert"
+10_	Leer nombre
+11_	Si ((nombre <-- 1) entonces
+12_ 	Para (columnas<--0; columnas<--5; 1) haga
+13_		Escribir las ventas del Jessica
+14_             leer ventas (0)(fila) 
+15_             suma < -- suma + ventas (0)(fila)
+16_     fin para.
+17_     De lo contario 
+18_		Para (columnas<--0; columnas<--5; 1) haga
+19_		Escribir las ventas del Jessica
+20_             leer ventas (1)(columnas) 
+21_             suma < -- suma + ventas (1)(columnas)
+22_      fin para
+23_     Fin Si
+24_     Escribir "Venderos (a)" + vendedores(i).
+25_ Fin para
+26_  Escribir "Han realizado un total de:" + suma "en ventas"
+27_ Fin.
+© 2021 GitHub, Inc.
