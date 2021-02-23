@@ -10,24 +10,24 @@
 
 
 1.  Inicio
-2.  (valor(4)(4),i[1-n])
-3.  valor[0][0] <-- 20
-4.  valor[0][1] <-- 30
-5.  valor[0][2] <-- 40
-6.  valor[0][3] <-- 50
-7.  valor[1][0] <-- 2
-8.  valor[1][1] <-- 3
-9.  valor[1][2] <-- 4
-10. valor[1][3] <-- 5
-11. valor[2][0] <-- 200
-12. valor[2][1] <-- 300
-13. valor[2][2] <-- 400
-14. valor[2][3] <-- 500
-15. valor[3][0] <-- 10
-16. valor[3][1] <-- 11
-17. valor[3][2] <-- 12
-18. valor[3][3] <-- 14
-9.  Escribir valor[0][1]+[0][2]+[0][3] // 30	40	50
-10. Escribir valor[1][2]+[1][3] // 4	5
-11. Escribir valor[2][3] // 500 
-12. Fin
+/Variables 
+2. valores(4)(4), i[0,n]
+3. fila, i[0,n]
+4. columna, i[0,n]
+5. x, x(200)[{1-9},{BS}]
+6. valores <-- {{20, 30, 40, 50}, { 2, 3, 4, 5}, {200, 300, 400, 500,},
+{10, 11, 12, 14}}
+// Proceso 
+7. Para (fila <-- 0 fila < 4 ; fila ++)  haga
+9.      Si ( fila == 1 ) entonces
+10.        Escribir valor [1][1] + valor [1][2] + valor[1][3]
+11.      De lo contrario 
+12.      Si ( fila == 2 ) entonces 
+13.        Escribir valor [2][2] + valor [2][3]
+14.       De lo contrario 
+12.        Si ( fila == 3 ) entonces 
+13.          Escribir valor [3][3]
+14.     Fin Si
+15.  Fin Para
+16. Fin
+© 2021 GitH
